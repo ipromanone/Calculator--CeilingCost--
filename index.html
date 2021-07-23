@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="price">
+        <div class="title">Рассчет стоимости потолка</div>
+          <div id="calculator" class="calculator">
+          <table>
+              <colgroup>
+                  <col width="70%">
+                  <col width="30%">
+              </colgroup>
+              <tbody><tr class="required">
+                  <td>Площадь потолка</td>
+                  <td><input name="area" type="text" value="10"></td>
+                  <td>м<sup>2</sup></td>
+              </tr>
+              <tr class="required">
+                  <td>Фактура</td>
+                  <td colspan="2">
+                      <select name="texture">
+                          <option value="mat">Матовый</option>
+                          <option value="glossy">Глянцевый</option>
+                          <option value="satin">Сатиновый</option>
+                          <option value="fabric">Тканевый</option>
+                      </select>
+                  </td>
+              </tr>
+              <tr>
+                  <td>Общее количество углов</td>
+                  <td><input name="corners" type="text" value="4"></td>
+                  <td>шт.</td>
+              </tr>
+              <tr>
+                  <td>Установка люстры</td>
+                  <td><input name="chandelier-hook" type="text" value=""></td>
+                  <td>шт.</td>
+              </tr>
+              <tr>
+                  <td>Установка встраиваемого светильника</td>
+                  <td><input name="lamp" type="text" value=""></td>
+                  <td>шт.</td>
+              </tr>
+              <tr>
+                  <td>Обход трубы, уходящей в потолок</td>
+                  <td><input name="tube" type="text" value=""></td>
+                  <td>шт.</td>
+              </tr>
+          </tbody></table>
+       
+          <div class="total">
+          Примерная стоимость: <span class="total">2990 руб.</span>
+          </div>
+          </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
